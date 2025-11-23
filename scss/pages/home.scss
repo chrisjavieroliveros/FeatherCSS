@@ -1,12 +1,6 @@
-@use '../abstracts' as *;
-@use '../components/buttons';
+@use "../abstracts" as *;
 
-.home-hero {
-    @include flex-center;
-    height: 50vh;
-    background-color: #f0f0f0;
-
-    h1 {
-        color: $primary-color;
-    }
+#home-page {
+  .hero {
+  }
 }

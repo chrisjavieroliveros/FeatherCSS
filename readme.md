@@ -19,13 +19,14 @@ scss/
 
 ### Key Concepts
 
--   **Global vs. Page-Specific**:
-    -   `global.scss`: Generates `global.css`. Contains base styles (reset, typography) and CSS variables. This should be included on every page.
-    -   `pages/*.scss`: Generates page-specific CSS (e.g., `home.css`). Contains styles specific to that page and imports only the components used on that page.
+- **Global vs. Page-Specific**:
 
--   **@use and @forward**:
-    -   We use `@use` to import modules. This namespaces variables and mixins, preventing naming collisions.
-    -   We use `@forward` in `_index.scss` files to expose members from a directory as a single module.
+  - `global.scss`: Generates `global.css`. Contains base styles (reset, typography) and CSS variables. This should be included on every page.
+  - `pages/*.scss`: Generates page-specific CSS (e.g., `home.css`). Contains styles specific to that page and imports only the components used on that page.
+
+- **@use and @forward**:
+  - We use `@use` to import modules. This namespaces variables and mixins, preventing naming collisions.
+  - We use `@forward` in `_index.scss` files to expose members from a directory as a single module.
 
 ### Compilation
 
@@ -42,23 +43,25 @@ npx sass scss/pages/home.scss css/home.css
 ### Usage
 
 1.  **Abstracts**: Import abstracts to use variables, mixins, or functions.
+
     ```scss
-    @use '../abstracts' as *;
-    
+    @use "../abstracts" as *;
+
     .my-element {
-      color: $primary-color;
+      color: var(--color-Primary);
       @include flex-center;
     }
     ```
 
 2.  **Components**: Create components in `scss/components` and import them in your page files.
+
     ```scss
     // scss/pages/home.scss
-    @use '../components/buttons';
+    @use "../components/buttons";
     ```
 
 3.  **HTML**: Include the global CSS and the specific page CSS in your HTML file.
     ```html
-    <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/home.css" />
     ```

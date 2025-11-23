@@ -10,4 +10,10 @@
             @content;
         }
     }
+
+    @else if $breakpoint =='medium' {
+        @media (min-width: 768px) {
+            @content;
+        }
+    }
 }
