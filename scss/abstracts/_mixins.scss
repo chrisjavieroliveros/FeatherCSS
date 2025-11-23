@@ -1,19 +1,5 @@
 @mixin flex-center {
-    display: flex;
-    justify_content: center;
-    align_items: center;
-}
-
-@mixin respond-to($breakpoint) {
-    @if $breakpoint =='small' {
-        @media (max-width: 600px) {
-            @content;
-        }
-    }
-
-    @else if $breakpoint =='medium' {
-        @media (min-width: 768px) {
-            @content;
-        }
-    }
+  display: flex;
+  justify_content: center;
+  align_items: center;
 }

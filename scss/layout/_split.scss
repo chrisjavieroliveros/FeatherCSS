@@ -1,19 +1,15 @@
-@use '../abstracts' as *;
+@use "../abstracts" as *;
 
 .split {
-    display: flex;
-    flex-direction: column;
-    gap: rem(16);
+  display: flex;
+  flex-direction: column;
+  gap: rem(16);
 
-    @include respond-to('medium') {
-        flex-direction: row;
-    }
+  &__main {
+    flex: 2;
+  }
 
-    &__main {
-        flex: 2;
-    }
-
-    &__aside {
-        flex: 1;
-    }
+  &__aside {
+    flex: 1;
+  }
 }

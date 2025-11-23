@@ -1,7 +1,7 @@
 @use "../abstracts" as *;
 
 body {
-  color: #333;
+  color: var(--color-Black);
 }
 
 h1,
