@@ -1,11 +1,4 @@
 @use "../abstracts" as *;
 
 #home-page {
-  .hero {
-    outline: 1px solid red;
-
-    @include mobile-up {
-      outline: 1px solid blue;
-    }
-  }
 }
