@@ -1,0 +1,14 @@
+// SCSS Variables
+$primary-color: #007bff;
+$secondary-color: #6c757d;
+$font-stack: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+// CSS Custom Properties
+// These should be included in the global scope (e.g., :root)
+@mixin css-variables {
+  :root {
+    --primary-color: #{$primary-color};
+    --secondary-color: #{$secondary-color};
+    --font-stack: #{$font-stack};
+  }
+}

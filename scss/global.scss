@@ -1,0 +1,12 @@
+@use 'abstracts' as *;
+@use 'base';
+
+// Initialize CSS Variables
+@include css-variables;
+
+// Global utilities or other global styles can go here
+.container {
+    max-width: rem(1200);
+    margin: 0 auto;
+    padding: 0 rem(16);
+}

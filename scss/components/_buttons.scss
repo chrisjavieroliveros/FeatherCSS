@@ -1,0 +1,17 @@
+@use '../abstracts' as *;
+@use 'sass:color';
+
+.btn {
+    display: inline-block;
+    padding: rem(8) rem(16);
+    border: none;
+    border-radius: rem(4);
+    cursor: pointer;
+    background-color: $primary-color;
+    color: white;
+    text-decoration: none;
+
+    &:hover {
+        background-color: color.adjust($primary-color, $lightness: -10%);
+    }
+}

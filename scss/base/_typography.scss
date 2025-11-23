@@ -1,0 +1,13 @@
+@use '../abstracts' as *;
+
+body {
+    font-family: $font-stack;
+    color: #333;
+}
+
+h1,
+h2,
+h3 {
+    margin-bottom: rem(16);
+    font-weight: bold;
+}
