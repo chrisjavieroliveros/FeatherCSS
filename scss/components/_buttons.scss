@@ -12,6 +12,6 @@
   text-decoration: none;
 
   &:hover {
-    background-color: color.adjust($primary-color, $lightness: -10%);
+    background-color: var(--color-Primary-600);
   }
 }
